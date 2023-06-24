@@ -60,7 +60,7 @@ with mp_face_mesh.FaceMesh(
             
             # return_val = async_result
             # stress_val = return_val.get()
-            stress_val_c = stress_val_c + 0.05
+            stress_val_c = stress_val_c + 0.02 + np.random.normal(0, 0.05)
             stress_val = 7 + (np.cos(stress_val_c))
             print(stress_val)
             # stress_val = 0 if stress_val < 0 else 1 if stress_val > 1 else stress_val
